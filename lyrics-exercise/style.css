@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+
+body{
+	background-color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	margin-top:100px;
+	margin-left:7%;
+    margin-right:37%;
+}
+
+
+h2{
+	color:#434343
+	font-size: 20px;
+}
+
+
+p.small {
+  line-height: 1.6;
+}
+
+
+p.big {
+  line-height: 2.0;
+}
+
+
+
+p{
+	color:#616161;
+}
+
+
+
