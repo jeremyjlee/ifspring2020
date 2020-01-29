@@ -1,0 +1,116 @@
+body{
+	font-family: 'Ubuntu';
+	background-color: #fafafa;
+
+}
+
+header {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-family: 'Ubuntu';
+}
+
+h2 {
+	font-family: 'helvetica';
+	margin-bottom: -.5em;
+	color: #ababab;
+
+}
+h3 {
+	font-family: 'helvetica';
+	margin-bottom: -.9em;
+	font-size: 15px;
+	color: #ababab;
+}
+
+#firstfont {
+	font-size: 24px;
+	margin-bottom: .5em;
+}
+
+#weight{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+#style{
+	border-bottom: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#spacing{
+	border-bottom: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#decoration{
+	border-bottom: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#trans{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.weightlight{
+	font-weight: lighter;
+}
+
+.weightbold{
+	font-weight: bold;
+}
+
+.stylenormal{
+	font-style: normal;
+}
+
+.styleitalic{
+	font-style: italic;
+}
+
+.spacing2{
+	letter-spacing: .3em;
+}
+
+.spacing3{
+	letter-spacing: -.06em;
+
+}
+
+.dec2{
+	text-decoration: underline;
+
+}
+
+.dec3{
+	text-decoration: line-through;
+
+}
+
+.dec4{
+	text-decoration: overline;
+
+}
+
+.trans2 {
+	text-transform: uppercase;
+}
+
+.trans3 {
+	text-transform: lowercase;
+}
+
+.trans4 {
+	text-transform: capitalize;
+}
+
+
+
+
