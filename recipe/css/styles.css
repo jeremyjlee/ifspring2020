@@ -100,14 +100,14 @@ body {
 
 .one {
 	background-image: url('https://www.cookingclassy.com/wp-content/uploads/2018/04/lettuce-wraps-16.jpg');
-	background-size: contain;
+	background-size: fixed;
 	background-repeat: no-repeat;
 	background-position: center ;
 	background-attachment: fixed;
 	text-align: center;
 	box-sizing: border-box;
 	width: 100%;
-	height: 100%;
+	height: 95%;
 	max-width: 420px;
 	margin: auto;
 }
@@ -116,7 +116,7 @@ body {
 
 .two {
 	width: 100%;
-	height: 120%;
+	height: 140%;
 	max-width: 420px;
 	margin-top: -25px;
 	border-radius: 30px;
@@ -187,18 +187,17 @@ h4 {
 
 
 a#btn_arrow {
-	font-size: 80px;
-	color: rgb(255,255,255,0.6);
-	padding-top: 800px;
-	padding-left: 180px;
-	position: absolute;
+	font-size: 60px;
+	color: rgb(176,159,113);
+	position: relative;
+	padding-left: 44%;
 	display: block;
 	transition: all .2s;
 }
 
 a#btn_arrow:hover {
-	color: rgb(255,255,255,0.9);
-	transform: translateY(-20px);
+	color: rgb(179,159,113,0.6);
+	transform: translateY(-10px);
 
 }
 
