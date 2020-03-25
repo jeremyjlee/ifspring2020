@@ -1,0 +1,263 @@
+h1, h2, h3, h4, h5, p{
+	margin-top: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: white;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ transition: all .2s;
+
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+  transition: all .2s;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #B09F71;
+  transition: all .2s;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main_content_container {
+	width: 100%;
+	height: 100%;
+	max-width: 420px;
+	margin: auto;
+	background-color: #E4E4E6;
+
+}
+
+.one {
+	background-image: url('https://www.cookingclassy.com/wp-content/uploads/2018/04/lettuce-wraps-16.jpg');
+	background-size: fixed;
+	background-repeat: no-repeat;
+	background-position: center ;
+	background-attachment: fixed;
+	text-align: center;
+	box-sizing: border-box;
+	width: 100%;
+	height: 95%;
+	max-width: 420px;
+	margin: auto;
+}
+
+.two {
+	width: 100%;
+	height: 190%;
+	max-width: 420px;
+	margin-top: -25px;
+	border-radius: 30px;
+	background-color: #FBFBFB;
+}
+
+.container{
+	font-family: 'Roboto', Helvetica, serif ;
+	font-size: 15px;
+	font-weight: 400;
+	margin-right: 20px;
+	color: #555B6E;
+}
+
+.container:hover {
+	color: #B09F71;
+}
+
+.button_container {
+	font-size: 40px;
+	margin: 0 0 10px 0;
+	margin-left: 20px;
+	margin-top: -5px;
+	width: 40px;
+	height: 40px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+h1 {
+	font-family: 'Roboto Slab', Helvetica, serif ;
+	padding-top: 38px;
+	text-align: center;
+	color: #B09F71;
+	opacity: 90%;
+	font-weight: 800;
+}
+
+h2 {
+	font-family: 'Roboto Slab', Helvetica, serif ;
+	color: #B09F71 ;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+h3{
+	font-family: 'Roboto Slab', Helvetica, serif ;
+	color: #B09F71 ;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+
+h4 {
+	font-family: 'Roboto Slab', Helvetica, serif ;	
+	text-align: center;
+	color: #555B6E;
+
+}
+
+/*button*/
+
+
+a#btn_arrow {
+	font-size: 60px;
+	color: rgb(176,159,113);
+	position: relative;
+	padding-left: 44%;
+	display: block;
+	transition: all .2s;
+}
+
+a#btn_arrow:hover {
+	color: rgb(179,159,113,0.6);
+	transform: translateY(-10px);
+}
+
+#btn_facebook  {
+	color: #3578E5;
+	transition: all .3s;
+}
+
+#btn_facebook:hover {
+	color: #77A7FF;
+}
+
+#btn_twitter  {
+	color: #56CDF1;
+	transition: all .3s;
+}
+
+#btn_twitter:hover {
+	color: #1FA1F3;
+}
+
+#btn_pinterest  {
+	color: #E60024;
+	transition: all .3s;
+}
+
+#btn_pinterest:hover  {
+	color: #757575;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #DEDEDE;
+  color: #555B6E;
+  background: transparent;
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 16px; 
+  resize: vertical; 
+  outline: none;
+  transition: all .3s;
+  font-size: 15px;
+  font-weight: bold;
+
+
+}
+
+
+input[type=submit] {
+  background-color: #B09F71	;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: rgb(179,159,113,0.6);
+}
+
+.containerc {
+  border-radius: 5px;
+  padding: 22px;
+  margin-top: -20px;
+  font-family: 'Roboto', Helvetica, serif ;
+  color: #555B6E;
+  font-size: 15px;
+
+
+}
+
+
+
