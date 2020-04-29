@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Livvic:400,600&display=swap');
+
+
+:root{
+    /* theme colors */
+    --text-gray: white;
+    --bg-color: white;
+
+    /*  theme font-family */
+    --robotoc: 'Roboto condensed', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+}
+
+/* ------------------ navbar ----------------- */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-black{
+    color: var(--bg-color);
+}
+
+body{
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    height: 125vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    margin-left: 3%;
+    margin-right: 3%;
+    background: black;
+    position: relative;
+    justify-content: space-between;
+    height: 0rem;
+    min-height: 7vh;
+    overflow-y: hidden;
+    border-bottom: 1px solid black;
+    transition: height 1s cubic-bezier(0.26, -0.01, 0,  1.01);
+}
+
+nav .nav-brand a{
+    margin-left: 15px;
+    display: block;
+    padding: 1rem 0;
+    font-family: var(--lexend);
+    font-size: 25px;
+}
+
+nav .nav-items{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .nav-items .nav-link{
+    padding: 1.3rem 1rem;
+    font-family: var(--livvic);
+    font-size: 1.1rem;
+}
+
+
+nav .nav-items .nav-link:hover{
+    color: grey;
+      transition: all 0.3s;
+
+}
+
+nav .nav-items .nav-link:hover a{
+    color: grey;
+          transition: all 0.3s;
+
+}
+
+
+nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+/* creating own toggle icons  */
+.icon, .icon::before, .icon::after{
+    position: relative;
+    width: 10px;
+    border: 2px solid white;
+    border-radius: 3rem;
+    display: inline-block;
+    transition: all .8s ease;
+    transition-property: width, left;
+}
+
+.icon::before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    left: -12px;
+}
+
+.icon::after{
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -2px;
+}
+
+.toggle-click, .toggle-click::before, .toggle-click::after{
+    width: 20px;
+}
+
+.toggle-click::before{
+    left: -2px;
+}
+
+.news {
+margin-right: 10px;
+  padding-top: 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+    font: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 3%;
+
+}
+
+h3{
+    font: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 20%;
+}
+
+iframe{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    margin-bottom: 20px;
+}
+
+.navtwo {
+background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid white;
+}
+.containerone ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.containerone li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 25px;
+  float: right;
+  position: relative;
+
+}
+
+.containerone a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+
+}
+
+.containerone ul li:hover {
+  color: grey;
+      transition: all 0.3s;
+}
+
+.containerone ul li:hover a{
+    color: grey;
+      transition: all 0.3s;
+}
+
+
+@media only screen and (max-width: 800px){
+    nav .nav-items{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    nav .toggle-collapse{
+        display: initial;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
